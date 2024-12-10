@@ -1,0 +1,56 @@
+/* General body styling */
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Space between the image and input box */
+}
+
+.search-container img {
+    max-width: 500px; /* Adjust the image size */
+    height: auto;
+}
+
+/* Search input container */
+.search-input-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 300px;
+}
+
+.search-input {
+    padding: 10px 15px 10px 40px; /* Add padding-left to create space for the icon */
+    width: 200%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust left position for the icon */
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+    color: #007bff; /* Change icon color on hover */
+}
+
+@media (max-width: 768px) {
+    .search-input-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
